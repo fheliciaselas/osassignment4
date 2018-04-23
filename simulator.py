@@ -21,7 +21,8 @@ class Process:
 
 def append_to_schedule(schedule,current_time, process_id):
    
-    if len(schedule) > 0:
+    n = len(schedule)
+    if  n > 0:
         last_schedule = schedule[n-1]
         previous_process_id = last_schedule[1]
         if process_id != previous_process_id:
